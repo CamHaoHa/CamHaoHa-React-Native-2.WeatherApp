@@ -3,7 +3,7 @@ import { View, SafeAreaView } from 'react-native';
 
 import { Stack } from 'expo-router';
 
-import { CurrentWeather, UpComingWeather } from '../components';
+import { CurrentWeather, UpComingWeather, City } from '../components';
 
 import { COLORS } from '../constants';
 
@@ -20,7 +20,8 @@ const Home = () => {
         }}
       />
       {/* <CurrentWeather /> */}
-      <UpComingWeather />
+      {/* <UpComingWeather /> */}
+      <City />
     </SafeAreaView>
   );
 };
