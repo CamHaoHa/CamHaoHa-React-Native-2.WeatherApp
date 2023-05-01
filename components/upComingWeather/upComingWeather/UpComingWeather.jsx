@@ -6,29 +6,13 @@ import {
   View,
   FlatList,
 } from 'react-native';
-import { Feather } from '@expo/vector-icons';
+
 import { images } from '../../../constants';
 import styles from './upComingWeather.style';
-
-const Item = (props) => {
-  const { dt, min, max, condition } = props;
-  return (
-    <View style={styles.item}>
-      <Feather
-        name={'sun'}
-        size={50}
-        color={'white'}
-      />
-      <Text>{dt}</Text>
-      <Text>{min}</Text>
-      <Text>{max}</Text>
-      <Text>{condition}</Text>
-    </View>
-  );
-};
+import ListItem from '../../common/list/listItem/ListItem';
 const UpComingWeather = () => {
   const renderItem = ({ item }) => (
-    <Item
+    <ListItem
       condition={item.weather[0].main}
       dt={item.dt}
       min={item.main.temp_min}

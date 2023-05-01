@@ -9,7 +9,7 @@ import { COLORS } from '../constants';
 
 const Home = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: 'blue' }}>
       <Stack.Screen
         options={{
           // headerStyle: { backgroundColor: COLORS.tertiary },

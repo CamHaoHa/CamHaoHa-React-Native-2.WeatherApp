@@ -6,16 +6,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
   },
-  item: {
-    padding: SIZES.large,
-    marginVertical: SIZES.xSmall,
-    marginHorizontal: SIZES.medium,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    borderWidth: SIZES.xxSmall,
-    backgroundColor: COLORS.tertiary,
-  },
+
   image: {
     flex: 1,
   },
