@@ -2,39 +2,42 @@ import React from 'react';
 import styles from './city.style';
 import { View, SafeAreaView, Text } from 'react-native';
 import { ImageBackground } from 'react-native';
-import { Feather } from '@expo/vector-icons';
 import { images } from '../../constants';
+import IconText from '../common/icon/IconText';
 
 const City = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
         style={styles.imageLayout}
-        source={images.CloudsJPG}
+        source={images.Moutain}
       >
         <Text style={[styles.cityName, styles.cityText]}>London</Text>
         <Text style={[styles.countryName, styles.cityText]}>UK</Text>
         <View style={[styles.populationWrapper, styles.rowLayout]}>
-          <Feather
-            name={'user'}
-            size={50}
-            color={'red'}
+          <IconText
+            iconName={'user'}
+            iconSize={50}
+            iconColor={'red'}
+            bodyText={'10000'}
+            bodyTextStyle={styles.populationText}
           />
-          <Text style={styles.populationText}>9000</Text>
         </View>
         <View style={[styles.riseSetWrapper, styles.rowLayout]}>
-          <Feather
-            name={'sunrise'}
-            size={50}
-            color={'white'}
+          <IconText
+            iconName="sunrise"
+            iconSize={50}
+            iconColor="white"
+            bodyText="4:00:00am"
+            bodyTextStyle={styles.riseSetText}
           />
-          <Text style={styles.riseSetText}>10:00:00am</Text>
-          <Feather
-            name={'sunset'}
-            size={50}
-            color={'white'}
+          <IconText
+            iconName="sunset"
+            iconSize={50}
+            iconColor={'white'}
+            bodyText={'5:00:00pm'}
+            bodyTextStyle={styles.riseSetText}
           />
-          <Text style={styles.riseSetText}>5:00:00pm</Text>
         </View>
       </ImageBackground>
     </SafeAreaView>
