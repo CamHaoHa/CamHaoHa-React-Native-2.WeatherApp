@@ -11,7 +11,10 @@ const styles = StyleSheet.create({
     padding: SIZES.large,
     justifyContent: 'center',
   },
-  highLowWrapper: { flexDirection: 'row' },
+  highLowWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
   bodyWrapper: {
     justifyContent: 'flex-end',
     alignItems: 'flex-start',

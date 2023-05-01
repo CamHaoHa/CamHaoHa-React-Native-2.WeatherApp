@@ -19,9 +19,9 @@ const Home = () => {
           header: () => null,
         }}
       />
-      {/* <CurrentWeather /> */}
+      <CurrentWeather />
       {/* <UpComingWeather /> */}
-      <City />
+      {/* <City /> */}
     </SafeAreaView>
   );
 };
