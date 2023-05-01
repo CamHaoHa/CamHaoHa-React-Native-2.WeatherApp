@@ -3,13 +3,13 @@ import { View, SafeAreaView } from 'react-native';
 
 import { Stack } from 'expo-router';
 
-import { CurrentWeather, UpComingWeather, City } from '../components';
+import { CurrentWeather } from '../../components';
 
-import { COLORS } from '../constants';
+import { COLORS } from '../../constants';
 
 const Home = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'blue' }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.tertiary }}>
       <Stack.Screen
         options={{
           // headerStyle: { backgroundColor: COLORS.tertiary },
