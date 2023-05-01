@@ -1,17 +1,28 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
 
-import { CurrentWeather } from '../components';
+import { Stack } from 'expo-router';
 
-const home = () => {
+import { CurrentWeather, UpComingWeather } from '../components';
+
+import { COLORS } from '../constants';
+
+const Home = () => {
   return (
-    <View
-      className="container"
-      style={{ flex: 1 }}
-    >
-      <CurrentWeather />
-    </View>
+    <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
+      <Stack.Screen
+        options={{
+          // headerStyle: { backgroundColor: COLORS.tertiary },
+
+          // headerShadowVisible: false,
+          // headerTitle: '',
+          header: () => null,
+        }}
+      />
+      {/* <CurrentWeather /> */}
+      <UpComingWeather />
+    </SafeAreaView>
   );
 };
 
-export default home;
+export default Home;

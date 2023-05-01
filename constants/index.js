@@ -1,3 +1,4 @@
 import { COLORS, FONT, SIZES, SHADOWS } from './theme';
 
-export { COLORS, FONT, SIZES, SHADOWS };
+import images from './images';
+export { COLORS, FONT, SIZES, SHADOWS, images };
