@@ -4,6 +4,7 @@ import { FontAwesome } from '@expo/vector-icons';
 
 import styles from './currentWeather.style';
 import RowText from './RowText';
+import { weatherType } from '../../../utils/weatherTypes';
 const CurrentWeather = () => {
   return (
     <SafeAreaView style={styles.wrapper}>
@@ -27,7 +28,7 @@ const CurrentWeather = () => {
 
       <RowText
         messageOne={`It's Sunny`}
-        messageTwo={`It's perfect t-shirt weather`}
+        messageTwo={weatherType.Thunderstorm.message}
         messageOneStyle={styles.descriptionText}
         messageTwoStyle={styles.subDescriptionText}
         containerStyle={styles.bodyWrapper}
