@@ -2,6 +2,7 @@ import { Tabs } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { COLORS } from '../../constants';
+
 const Layout = () => {
   return (
     <Tabs
